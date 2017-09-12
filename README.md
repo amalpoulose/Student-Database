@@ -6,8 +6,12 @@ The main file is database.c
 
 All function declarations are present in database.h.
 
-For compiling use  make.
-For execution try  ./outfile
+For compiling use:
+      
+       make
+For execution try  
+
+     ./outfile
 
 It will create file named database if not present and can manage details of student through it.
   ->This program manages only Name mark Roll number of student which can be extended according to need.
@@ -17,4 +21,9 @@ It will create file named database if not present and can manage details of stud
      
   ->All functions are created in seperate c files which is linked through makefile.
   
+The Static and Dynamic libraries are also included:
+   libst.a  and libst.so
+To compile using Library:
   
+      cc database.c libst.a        (static  library)
+      cc database.c ./libst.so     (dynamic library)
