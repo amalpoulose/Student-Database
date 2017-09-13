@@ -27,3 +27,9 @@ To compile using Library:
   
       cc database.c libst.a        (static  library)
       cc database.c ./libst.so     (dynamic library)
+To use dynamic library libst.so at runtime only use datalib.c instead of database.c, and to compile use command:
+               
+       cc datalib.c -ldl
+to run program use : 
+         
+        ./a.out
